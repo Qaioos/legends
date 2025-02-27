@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.contenr {
+  margin: 0 7rem;
+  height: 100%;
+  padding: 25px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+ul {
+  list-style: none;
+}
+#home {
+  background-color: #0856ed;
+  height: 100vh;
+  color: white;
+}
+nav .logo {
+  width: 50px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul a {
+  padding: 25px;
+}
+
+#like {
+  font-size: 60px;
+}
+
+.icone {
+  position: relative;
+  top: 8px;
+  right: -104px;
+  width: 20px;
+  height: 20px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+p {
+  margin-top: 10px;
+  /* i get thes elmint margen becuse the icons moven to lefte  */
+  margin-right: 450px;
+  margin-bottom: 15px;
+  width: 500px;
+  font-size: 18px;
+}
+
+.content {
+  margin-top: 100px;
+}
+#home .content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 70%;
+}
+#home .content img {
+  animation: animation 1s ease-out;
+}
+.botom {
+  padding: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  position: absolute;
+  transition: all 0.5s;
+}
+.botom:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.pepsi-three {
+  /* position: absolute;
+  bottom: 1px;
+  left: 187px;
+  height: 106px; */
+  display: block;
+  margin: auto;
+  width: 112px;
+  height: 105px;
+  margin: -24px auto;
+  animation: animation2 1s ease-out;
+}
+
+@keyframes animation {
+  0% {
+    transform: translatex(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animation2 {
+  0% {
+    transform: translatey(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* tablet */
+@media (max-width: 900px) {
+  .contenr {
+    margin: 0 5rem;
+  }
+  nav ul a {
+    padding: 10px;
+  }
+  #home .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 0;
+  }
+  .content-text{
+    margin-bottom: 2rem;
+  }
+  p{
+    width: 100%;
+  }
+  .icone{
+    width: 42px;
+    margin: auto;
+  position: relative;
+  top: -10px;
+left: 0px;
+    /* height: 42px; */
+  }
+  #pepsi1{
+    width: 100px;
+    margin: auto;
+  }
+  .botom{
+    position: relative;
+    top: 20px;
+  }
+   .social{
+    margin:auto;
+   }
+}
+@media (max-width:600px){
+nav{
+  display: block; 
+
+}
+nav .logo{
+  display: block; 
+  margin: 0 auto 15px;
+}
+nav ul {
+  justify-content: center;
+
+}
+nav ul a{
+  font-size: 12px;
+}
+}
